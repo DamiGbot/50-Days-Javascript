@@ -1,0 +1,29 @@
+//Buttons
+
+button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 10rem;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+
+	& > i.material-icons {
+		font-size: 2.6rem;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&#open {
+		left: 60%;
+	}
+
+	&#close {
+		top: 60%;
+		transform: rotate(90deg);
+		transform-origin: top left;
+	}
+}

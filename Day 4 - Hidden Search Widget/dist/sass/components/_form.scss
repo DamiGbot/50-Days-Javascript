@@ -1,0 +1,11 @@
+//Form
+
+.search-box {
+	@extend .outline-value;
+	height: 5rem;
+	width: 5rem;
+	padding: 1.5rem;
+	border: 0;
+	transition: width 0.3s ease;
+	font-size: 1.8rem;
+}

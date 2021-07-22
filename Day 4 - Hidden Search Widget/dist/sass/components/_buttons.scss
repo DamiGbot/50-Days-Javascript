@@ -1,0 +1,14 @@
+//Buttons
+
+#search-icon {
+	@extend .outline-value;
+	width: 5rem;
+	height: 5rem;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	transition: transform 0.3s ease;
+}

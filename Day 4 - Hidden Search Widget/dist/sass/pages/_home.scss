@@ -1,0 +1,28 @@
+//Home page style
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, #7d5fff, #7158e2);
+}
+
+.container {
+	position: relative;
+	height: 5rem;
+}
+
+.container.active {
+	.search-box {
+		width: 20rem;
+	}
+	#search-icon {
+		transform: translateX(20rem);
+	}
+}
+
+.outline-value {
+	outline: none;
+}

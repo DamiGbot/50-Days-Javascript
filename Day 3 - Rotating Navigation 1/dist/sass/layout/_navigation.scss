@@ -1,0 +1,47 @@
+//Navigation
+
+nav {
+	position: fixed;
+	bottom: 4rem;
+	left: 1rem;
+	z-index: 100px;
+
+	ul {
+		list-style-type: none;
+		padding-left: 3rem;
+
+		li {
+			text-transform: uppercase;
+			margin: 3rem 0;
+			transform: translateX(-100%);
+			transition: transform 0.4s ease-in;
+
+			a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.material-icons {
+				transform: translateY(0.6rem);
+				margin-right: 1rem;
+			}
+
+			& + li {
+				margin-left: 1.5rem;
+				transform: translateX(-150%);
+
+				& + li {
+					margin-left: 3rem;
+					transform: translateX(-200%);
+				}
+			}
+		}
+	}
+}
+
+.container.show-nav {
+	& + nav li {
+		transform: translateX(0);
+		transition-delay: 0.3s;
+	}
+}
