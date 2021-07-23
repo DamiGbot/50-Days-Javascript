@@ -1,0 +1,25 @@
+//Home page style
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.bg {
+	background: url("/dist/images/dominik-reallife-1yLt0422fYQ-unsplash.jpg")
+		no-repeat center center/cover;
+	position: absolute;
+	top: -3rem;
+	left: -3rem;
+	width: calc(100vw + 3rem);
+	height: calc(100vh + 3rem);
+	z-index: -1;
+	filter: blur(0rem);
+}
+
+.loading-text {
+	font-size: 5rem;
+	color: #fff;
+}
